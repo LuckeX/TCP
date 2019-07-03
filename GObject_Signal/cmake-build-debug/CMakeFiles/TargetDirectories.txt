@@ -1,0 +1,3 @@
+/home/xyk/Desktop/Git/GObject_Signal/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/xyk/Desktop/Git/GObject_Signal/cmake-build-debug/CMakeFiles/GObject_Signal.dir
+/home/xyk/Desktop/Git/GObject_Signal/cmake-build-debug/CMakeFiles/edit_cache.dir
