@@ -1,0 +1,3 @@
+/home/xyk/Documents/CLionProjects/TCPClient/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/xyk/Documents/CLionProjects/TCPClient/cmake-build-debug/CMakeFiles/TCPClient.dir
+/home/xyk/Documents/CLionProjects/TCPClient/cmake-build-debug/CMakeFiles/edit_cache.dir

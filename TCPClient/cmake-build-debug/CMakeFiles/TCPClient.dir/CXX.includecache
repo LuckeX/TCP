@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xyk/Documents/CLionProjects/TCPClient/Client.h
+boost/asio.hpp
+-
+boost/scoped_ptr.hpp
+-
+boost/shared_array.hpp
+-
+boost/thread.hpp
+-
+boost/thread/mutex.hpp
+-
+iostream
+-
+
+/home/xyk/Documents/CLionProjects/TCPClient/RawTransport.h
+boost/asio.hpp
+-
+boost/scoped_ptr.hpp
+-
+boost/shared_array.hpp
+-
+boost/thread.hpp
+-
+boost/thread/mutex.hpp
+-
+queue
+-
+
+/home/xyk/Documents/CLionProjects/TCPClient/main.cpp
+RawTransport.h
+/home/xyk/Documents/CLionProjects/TCPClient/RawTransport.h
+iostream
+-
+boost/array.hpp
+-
+Client.h
+/home/xyk/Documents/CLionProjects/TCPClient/Client.h
+
