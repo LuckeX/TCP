@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/xyk/Documents/CLionProjects/testTCP/RawTransport.cpp" "/home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug/CMakeFiles/testTCP.dir/RawTransport.cpp.o"
-  "/home/xyk/Documents/CLionProjects/testTCP/Server.cpp" "/home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug/CMakeFiles/testTCP.dir/Server.cpp.o"
-  "/home/xyk/Documents/CLionProjects/testTCP/main.cpp" "/home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug/CMakeFiles/testTCP.dir/main.cpp.o"
+  "/home/xyk/Desktop/Git/testTCP/RawTransport.cpp" "/home/xyk/Desktop/Git/testTCP/cmake-build-debug/CMakeFiles/testTCP.dir/RawTransport.cpp.o"
+  "/home/xyk/Desktop/Git/testTCP/Server.cpp" "/home/xyk/Desktop/Git/testTCP/cmake-build-debug/CMakeFiles/testTCP.dir/Server.cpp.o"
+  "/home/xyk/Desktop/Git/testTCP/main.cpp" "/home/xyk/Desktop/Git/testTCP/cmake-build-debug/CMakeFiles/testTCP.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

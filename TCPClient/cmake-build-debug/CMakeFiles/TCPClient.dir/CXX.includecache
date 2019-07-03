@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/xyk/Documents/CLionProjects/TCPClient/Client.h
+/home/xyk/Desktop/Git/TCPClient/Client.h
 boost/asio.hpp
 -
 boost/scoped_ptr.hpp
@@ -20,7 +20,7 @@ boost/thread/mutex.hpp
 iostream
 -
 
-/home/xyk/Documents/CLionProjects/TCPClient/RawTransport.h
+/home/xyk/Desktop/Git/TCPClient/RawTransport.h
 boost/asio.hpp
 -
 boost/scoped_ptr.hpp
@@ -34,13 +34,13 @@ boost/thread/mutex.hpp
 queue
 -
 
-/home/xyk/Documents/CLionProjects/TCPClient/main.cpp
+/home/xyk/Desktop/Git/TCPClient/main.cpp
 RawTransport.h
-/home/xyk/Documents/CLionProjects/TCPClient/RawTransport.h
+/home/xyk/Desktop/Git/TCPClient/RawTransport.h
 iostream
 -
 boost/array.hpp
 -
 Client.h
-/home/xyk/Documents/CLionProjects/TCPClient/Client.h
+/home/xyk/Desktop/Git/TCPClient/Client.h
 

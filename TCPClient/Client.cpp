@@ -39,7 +39,7 @@ void Server_Client::connect_handler(const boost::system::error_code &ec, Server_
         return;
     }
     cout<<"connected"<<endl;
-    char* str = "hello";
+    char str[] = "\0\0\0\0h";
     while(1){
         sendData(str,5);
         sleep(1);
@@ -49,5 +49,5 @@ void Server_Client::connect_handler(const boost::system::error_code &ec, Server_
 }
 
 void Server_Client::sendData(char *buf, int len) {
-    sock->async_write_some(boost::asio::buffer("hello"),std::bind(&Server_Client::write_handler,this,std::placeholders::_1));
+    sock->async_write_some(boost::asio::buffer(buf,len),std::bind(&Server_Client::write_handler,this,std::placeholders::_1));
 }

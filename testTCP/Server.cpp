@@ -7,18 +7,29 @@
 static const int BUFFER_ALIGNMENT = 16;
 static const double BUFFER_EXPANSION_MULTIPLIER = 1.3;
 
-Server_Client::Server_Client(size_t initialBufferSize, bool tag){
+Server_Client::Server_Client(size_t initialBufferSize, bool tag) {
     m_isClosing = false;
     m_tag = tag;
     m_bufferSize = initialBufferSize;
     m_receivedBytes = 0;
 }
 
+void Server_Client::listento(int port) {
+    if (sock)cout << "TCP sock existed, ignoring the listening request for port " << port << endl;
+    else {
+        sock.reset(new tcp::socket(m_io));
+        m_acceptor.reset(new tcp::acceptor(m_io, tcp::endpoint(tcp::v4(), port)));
+        m_acceptor->async_accept(*sock, std::bind(&Server_Client::accept_handler,
+                                                  this, std::placeholders::_1, sock));
+        cout << "TCP listening on " << m_acceptor->local_endpoint().address().to_string() << ":" << port << endl;
+    }
+    m_io.run();
+}
+
 void Server_Client::accept_handler(const boost::system::error_code &ec, Server_Client::sock_ptr sock) {
     if (ec) { return; }
     std::cout << "client:";
     std::cout << sock->remote_endpoint().address() << std::endl;
-//    sock->async_write_some(boost::asio::buffer("hello asio"), std::bind(&Server_Client::write_handler, this, std::placeholders::_1));
     receiveData();
 }
 
@@ -40,6 +51,7 @@ void Server_Client::readPacketHandler(const boost::system::error_code &ec, std::
                                 boost::asio::placeholders::bytes_transferred));
         } else {
             m_receivedBytes = 0;
+            cout<<m_receiveData.buffer.get()<<endl;
             receiveData();
         }
     } else {
@@ -52,6 +64,7 @@ void Server_Client::readHandler(const boost::system::error_code &ec, std::size_t
 
     if (!ec || ec == boost::asio::error::message_size) {
         if (!m_tag) {
+            cout << m_receiveData.buffer.get() << endl;
             receiveData();
             return;
         }
@@ -66,6 +79,7 @@ void Server_Client::readHandler(const boost::system::error_code &ec, std::size_t
                                               boost::asio::placeholders::bytes_transferred));
         } else {
             payloadlen = ntohl(*(reinterpret_cast<uint32_t *>(m_readHeader)));
+            cout<<"payloadlen: "<<payloadlen<<endl;
             if (payloadlen > m_bufferSize) {
                 m_bufferSize = ((payloadlen * BUFFER_EXPANSION_MULTIPLIER + BUFFER_ALIGNMENT - 1) / BUFFER_ALIGNMENT) *
                                BUFFER_ALIGNMENT;
@@ -82,26 +96,23 @@ void Server_Client::readHandler(const boost::system::error_code &ec, std::size_t
                                               boost::asio::placeholders::bytes_transferred));
         }
     }
-    cout << m_buf << "  " << bytes << endl;
-    receiveData();
 }
 
 void Server_Client::receiveData() {
-//    sock->async_read_some(boost::asio::buffer(m_buf), std::bind(&Server_Client::read_handler, this, std::placeholders::_1));
-//       sock->async_read_some(boost::asio::buffer(m_buf),boost::bind(&Server_Client::readHandler,this,
-//               boost::asio::placeholders::error,
-//               boost::asio::placeholders::bytes_transferred));
-
     if (!m_receiveData.buffer)
         m_receiveData.buffer.reset(new char[m_bufferSize]);
 
     assert(sock);
     if (m_tag) {
-        //TODO
+        sock->async_read_some(boost::asio::buffer(m_readHeader,4),
+                boost::bind(&Server_Client::readHandler,this,
+                        boost::asio::placeholders::error,
+                        boost::asio::placeholders::bytes_transferred));
     } else {
-        sock->async_read_some(boost::asio::buffer(m_buf), boost::bind(&Server_Client::readHandler, this,
-                                                                      boost::asio::placeholders::error,
-                                                                      boost::asio::placeholders::bytes_transferred));
+        sock->async_read_some(boost::asio::buffer(m_receiveData.buffer.get(), m_bufferSize),
+                              boost::bind(&Server_Client::readHandler, this,
+                                          boost::asio::placeholders::error,
+                                          boost::asio::placeholders::bytes_transferred));
     }
 }
 
@@ -130,15 +141,15 @@ void Server_Client::connect_handler(const boost::system::error_code &ec, Server_
         return;
     }
     cout << "connected" << endl;
-    char *str = "hello";
+//    char str[] = "hello";
     while (1) {
-        sendData(str, 5);
+        sendData((char *) "hello", 5);
         sleep(1);
     }
 }
 
 void Server_Client::sendData(char *buf, int len) {
-    sock->async_write_some(boost::asio::buffer("hello"),
+    sock->async_write_some(boost::asio::buffer("hello,this is Server"),
                            std::bind(&Server_Client::write_handler, this, std::placeholders::_1));
 }
 

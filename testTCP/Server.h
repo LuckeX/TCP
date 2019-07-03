@@ -23,7 +23,7 @@ class Server_Client {
 public:
     void listento(int port);
     void connect(const char *address,int port);
-    Server_Client(size_t initialBufferSize = 1600, bool tag = false);
+    Server_Client(size_t initialBufferSize = 5, bool tag = false);
 
 private:
     void receiveData();

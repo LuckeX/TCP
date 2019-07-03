@@ -2,7 +2,6 @@
 #include <iostream>
 #include "Server.h"
 using namespace std;
-using namespace boost::asio;
 
 
 
@@ -17,6 +16,6 @@ int main() {
 //        svr.listento(9998);
 //    } catch (exception &e) { cout << e.what() << endl; }
 //    return 0;
-      Server_Client client;
+      Server_Client client(5, true);
       client.listento(8889);
 }
