@@ -6,11 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/xyk/Desktop/Git/testTCP/Server.cpp
-Server.h
-/home/xyk/Desktop/Git/testTCP/Server.h
+/home/xyk/Documents/CLionProjects/testTCP/RawTransport.h
+boost/asio.hpp
+-
+boost/scoped_ptr.hpp
+-
+boost/shared_array.hpp
+-
+boost/thread.hpp
+-
+boost/thread/mutex.hpp
+-
+queue
+-
 
-/home/xyk/Desktop/Git/testTCP/Server.h
+/home/xyk/Documents/CLionProjects/testTCP/Server.h
 boost/asio.hpp
 -
 boost/scoped_ptr.hpp
@@ -23,4 +33,12 @@ boost/thread/mutex.hpp
 -
 iostream
 -
+
+/home/xyk/Documents/CLionProjects/testTCP/main.cpp
+RawTransport.h
+/home/xyk/Documents/CLionProjects/testTCP/RawTransport.h
+iostream
+-
+Server.h
+/home/xyk/Documents/CLionProjects/testTCP/Server.h
 

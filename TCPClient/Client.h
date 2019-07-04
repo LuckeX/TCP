@@ -24,7 +24,6 @@ public:
     void listento(int port);
     void connect(const char *address,int port);
 
-
 private:
 
     void accept_handler(const boost::system::error_code &ec, sock_ptr sock);

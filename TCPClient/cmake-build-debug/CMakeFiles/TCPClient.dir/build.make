@@ -43,10 +43,10 @@ RM = /home/xyk/Downloads/CLion-2018.3.4/clion-2018.3.4/bin/cmake/linux/bin/cmake
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xyk/Desktop/Git/TCPClient
+CMAKE_SOURCE_DIR = /home/xyk/Documents/CLionProjects/TCPClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xyk/Desktop/Git/TCPClient/cmake-build-debug
+CMAKE_BINARY_DIR = /home/xyk/Documents/CLionProjects/TCPClient/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/TCPClient.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/TCPClient.dir/flags.make
 
 CMakeFiles/TCPClient.dir/main.cpp.o: CMakeFiles/TCPClient.dir/flags.make
 CMakeFiles/TCPClient.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xyk/Desktop/Git/TCPClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TCPClient.dir/main.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TCPClient.dir/main.cpp.o -c /home/xyk/Desktop/Git/TCPClient/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xyk/Documents/CLionProjects/TCPClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TCPClient.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TCPClient.dir/main.cpp.o -c /home/xyk/Documents/CLionProjects/TCPClient/main.cpp
 
 CMakeFiles/TCPClient.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TCPClient.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xyk/Desktop/Git/TCPClient/main.cpp > CMakeFiles/TCPClient.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xyk/Documents/CLionProjects/TCPClient/main.cpp > CMakeFiles/TCPClient.dir/main.cpp.i
 
 CMakeFiles/TCPClient.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TCPClient.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xyk/Desktop/Git/TCPClient/main.cpp -o CMakeFiles/TCPClient.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xyk/Documents/CLionProjects/TCPClient/main.cpp -o CMakeFiles/TCPClient.dir/main.cpp.s
 
 CMakeFiles/TCPClient.dir/RawTransport.cpp.o: CMakeFiles/TCPClient.dir/flags.make
 CMakeFiles/TCPClient.dir/RawTransport.cpp.o: ../RawTransport.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xyk/Desktop/Git/TCPClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TCPClient.dir/RawTransport.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TCPClient.dir/RawTransport.cpp.o -c /home/xyk/Desktop/Git/TCPClient/RawTransport.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xyk/Documents/CLionProjects/TCPClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TCPClient.dir/RawTransport.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TCPClient.dir/RawTransport.cpp.o -c /home/xyk/Documents/CLionProjects/TCPClient/RawTransport.cpp
 
 CMakeFiles/TCPClient.dir/RawTransport.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TCPClient.dir/RawTransport.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xyk/Desktop/Git/TCPClient/RawTransport.cpp > CMakeFiles/TCPClient.dir/RawTransport.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xyk/Documents/CLionProjects/TCPClient/RawTransport.cpp > CMakeFiles/TCPClient.dir/RawTransport.cpp.i
 
 CMakeFiles/TCPClient.dir/RawTransport.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TCPClient.dir/RawTransport.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xyk/Desktop/Git/TCPClient/RawTransport.cpp -o CMakeFiles/TCPClient.dir/RawTransport.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xyk/Documents/CLionProjects/TCPClient/RawTransport.cpp -o CMakeFiles/TCPClient.dir/RawTransport.cpp.s
 
 CMakeFiles/TCPClient.dir/Client.cpp.o: CMakeFiles/TCPClient.dir/flags.make
 CMakeFiles/TCPClient.dir/Client.cpp.o: ../Client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xyk/Desktop/Git/TCPClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TCPClient.dir/Client.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TCPClient.dir/Client.cpp.o -c /home/xyk/Desktop/Git/TCPClient/Client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xyk/Documents/CLionProjects/TCPClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TCPClient.dir/Client.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TCPClient.dir/Client.cpp.o -c /home/xyk/Documents/CLionProjects/TCPClient/Client.cpp
 
 CMakeFiles/TCPClient.dir/Client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TCPClient.dir/Client.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xyk/Desktop/Git/TCPClient/Client.cpp > CMakeFiles/TCPClient.dir/Client.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xyk/Documents/CLionProjects/TCPClient/Client.cpp > CMakeFiles/TCPClient.dir/Client.cpp.i
 
 CMakeFiles/TCPClient.dir/Client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TCPClient.dir/Client.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xyk/Desktop/Git/TCPClient/Client.cpp -o CMakeFiles/TCPClient.dir/Client.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xyk/Documents/CLionProjects/TCPClient/Client.cpp -o CMakeFiles/TCPClient.dir/Client.cpp.s
 
 # Object files for target TCPClient
 TCPClient_OBJECTS = \
@@ -110,7 +110,7 @@ TCPClient: CMakeFiles/TCPClient.dir/RawTransport.cpp.o
 TCPClient: CMakeFiles/TCPClient.dir/Client.cpp.o
 TCPClient: CMakeFiles/TCPClient.dir/build.make
 TCPClient: CMakeFiles/TCPClient.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xyk/Desktop/Git/TCPClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TCPClient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xyk/Documents/CLionProjects/TCPClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TCPClient"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TCPClient.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/TCPClient.dir/clean:
 .PHONY : CMakeFiles/TCPClient.dir/clean
 
 CMakeFiles/TCPClient.dir/depend:
-	cd /home/xyk/Desktop/Git/TCPClient/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xyk/Desktop/Git/TCPClient /home/xyk/Desktop/Git/TCPClient /home/xyk/Desktop/Git/TCPClient/cmake-build-debug /home/xyk/Desktop/Git/TCPClient/cmake-build-debug /home/xyk/Desktop/Git/TCPClient/cmake-build-debug/CMakeFiles/TCPClient.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/xyk/Documents/CLionProjects/TCPClient/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xyk/Documents/CLionProjects/TCPClient /home/xyk/Documents/CLionProjects/TCPClient /home/xyk/Documents/CLionProjects/TCPClient/cmake-build-debug /home/xyk/Documents/CLionProjects/TCPClient/cmake-build-debug /home/xyk/Documents/CLionProjects/TCPClient/cmake-build-debug/CMakeFiles/TCPClient.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/TCPClient.dir/depend
 

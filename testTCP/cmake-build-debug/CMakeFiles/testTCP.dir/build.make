@@ -43,10 +43,10 @@ RM = /home/xyk/Downloads/CLion-2018.3.4/clion-2018.3.4/bin/cmake/linux/bin/cmake
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xyk/Desktop/Git/testTCP
+CMAKE_SOURCE_DIR = /home/xyk/Documents/CLionProjects/testTCP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xyk/Desktop/Git/testTCP/cmake-build-debug
+CMAKE_BINARY_DIR = /home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/testTCP.dir/depend.make
@@ -59,58 +59,43 @@ include CMakeFiles/testTCP.dir/flags.make
 
 CMakeFiles/testTCP.dir/main.cpp.o: CMakeFiles/testTCP.dir/flags.make
 CMakeFiles/testTCP.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xyk/Desktop/Git/testTCP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/testTCP.dir/main.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testTCP.dir/main.cpp.o -c /home/xyk/Desktop/Git/testTCP/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/testTCP.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testTCP.dir/main.cpp.o -c /home/xyk/Documents/CLionProjects/testTCP/main.cpp
 
 CMakeFiles/testTCP.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testTCP.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xyk/Desktop/Git/testTCP/main.cpp > CMakeFiles/testTCP.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xyk/Documents/CLionProjects/testTCP/main.cpp > CMakeFiles/testTCP.dir/main.cpp.i
 
 CMakeFiles/testTCP.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testTCP.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xyk/Desktop/Git/testTCP/main.cpp -o CMakeFiles/testTCP.dir/main.cpp.s
-
-CMakeFiles/testTCP.dir/RawTransport.cpp.o: CMakeFiles/testTCP.dir/flags.make
-CMakeFiles/testTCP.dir/RawTransport.cpp.o: ../RawTransport.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xyk/Desktop/Git/testTCP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testTCP.dir/RawTransport.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testTCP.dir/RawTransport.cpp.o -c /home/xyk/Desktop/Git/testTCP/RawTransport.cpp
-
-CMakeFiles/testTCP.dir/RawTransport.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testTCP.dir/RawTransport.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xyk/Desktop/Git/testTCP/RawTransport.cpp > CMakeFiles/testTCP.dir/RawTransport.cpp.i
-
-CMakeFiles/testTCP.dir/RawTransport.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testTCP.dir/RawTransport.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xyk/Desktop/Git/testTCP/RawTransport.cpp -o CMakeFiles/testTCP.dir/RawTransport.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xyk/Documents/CLionProjects/testTCP/main.cpp -o CMakeFiles/testTCP.dir/main.cpp.s
 
 CMakeFiles/testTCP.dir/Server.cpp.o: CMakeFiles/testTCP.dir/flags.make
 CMakeFiles/testTCP.dir/Server.cpp.o: ../Server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xyk/Desktop/Git/testTCP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/testTCP.dir/Server.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testTCP.dir/Server.cpp.o -c /home/xyk/Desktop/Git/testTCP/Server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testTCP.dir/Server.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testTCP.dir/Server.cpp.o -c /home/xyk/Documents/CLionProjects/testTCP/Server.cpp
 
 CMakeFiles/testTCP.dir/Server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testTCP.dir/Server.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xyk/Desktop/Git/testTCP/Server.cpp > CMakeFiles/testTCP.dir/Server.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xyk/Documents/CLionProjects/testTCP/Server.cpp > CMakeFiles/testTCP.dir/Server.cpp.i
 
 CMakeFiles/testTCP.dir/Server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testTCP.dir/Server.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xyk/Desktop/Git/testTCP/Server.cpp -o CMakeFiles/testTCP.dir/Server.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xyk/Documents/CLionProjects/testTCP/Server.cpp -o CMakeFiles/testTCP.dir/Server.cpp.s
 
 # Object files for target testTCP
 testTCP_OBJECTS = \
 "CMakeFiles/testTCP.dir/main.cpp.o" \
-"CMakeFiles/testTCP.dir/RawTransport.cpp.o" \
 "CMakeFiles/testTCP.dir/Server.cpp.o"
 
 # External object files for target testTCP
 testTCP_EXTERNAL_OBJECTS =
 
 testTCP: CMakeFiles/testTCP.dir/main.cpp.o
-testTCP: CMakeFiles/testTCP.dir/RawTransport.cpp.o
 testTCP: CMakeFiles/testTCP.dir/Server.cpp.o
 testTCP: CMakeFiles/testTCP.dir/build.make
 testTCP: CMakeFiles/testTCP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xyk/Desktop/Git/testTCP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable testTCP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable testTCP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testTCP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +108,6 @@ CMakeFiles/testTCP.dir/clean:
 .PHONY : CMakeFiles/testTCP.dir/clean
 
 CMakeFiles/testTCP.dir/depend:
-	cd /home/xyk/Desktop/Git/testTCP/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xyk/Desktop/Git/testTCP /home/xyk/Desktop/Git/testTCP /home/xyk/Desktop/Git/testTCP/cmake-build-debug /home/xyk/Desktop/Git/testTCP/cmake-build-debug /home/xyk/Desktop/Git/testTCP/cmake-build-debug/CMakeFiles/testTCP.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xyk/Documents/CLionProjects/testTCP /home/xyk/Documents/CLionProjects/testTCP /home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug /home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug /home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug/CMakeFiles/testTCP.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/testTCP.dir/depend
 

@@ -1,3 +1,3 @@
-/home/xyk/Desktop/Git/testTCP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/xyk/Desktop/Git/testTCP/cmake-build-debug/CMakeFiles/testTCP.dir
-/home/xyk/Desktop/Git/testTCP/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug/CMakeFiles/testTCP.dir
+/home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug/CMakeFiles/edit_cache.dir

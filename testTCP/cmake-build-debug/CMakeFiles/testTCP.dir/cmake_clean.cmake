@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/testTCP.dir/main.cpp.o"
-  "CMakeFiles/testTCP.dir/RawTransport.cpp.o"
   "CMakeFiles/testTCP.dir/Server.cpp.o"
   "testTCP.pdb"
   "testTCP"

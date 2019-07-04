@@ -1,4 +1,4 @@
-# Install script for directory: /home/xyk/Desktop/Git/testTCP
+# Install script for directory: /home/xyk/Documents/CLionProjects/testTCP
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/xyk/Desktop/Git/testTCP/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

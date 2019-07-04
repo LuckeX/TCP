@@ -39,7 +39,7 @@ void Server_Client::connect_handler(const boost::system::error_code &ec, Server_
         return;
     }
     cout<<"connected"<<endl;
-    char str[] = "\0\0\0\0h";
+    char str[] = "1234567";
     while(1){
         sendData(str,5);
         sleep(1);

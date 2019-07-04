@@ -11,9 +11,15 @@
 #include <boost/thread.hpp>
 #include <boost/thread/mutex.hpp>
 #include <iostream>
+#include <queue>
 
 using boost::asio::ip::tcp;
 using namespace std;
+
+typedef struct {
+    boost::shared_array<char> buffer;
+    int length;
+} TransportData;
 
 class Server_Client {
     typedef tcp::socket socket_type;
@@ -21,6 +27,9 @@ class Server_Client {
     typedef std::shared_ptr <tcp::acceptor> acceptor_ptr;
 
 public:
+    static queue<TransportData>m_receiveQueue;
+    static boost::mutex m_receiveQueueMutex;
+
     void listento(int port);
     void connect(const char *address,int port);
     Server_Client(size_t initialBufferSize = 1600, bool tag = true);
@@ -35,10 +44,6 @@ private:
     void readPacketHandler(const boost::system::error_code& ec, std::size_t bytes);
 
 private:
-    typedef struct {
-        boost::shared_array<char> buffer;
-        int length;
-    } TransportData;
 
     boost::asio::io_service m_io;
     acceptor_ptr m_acceptor;

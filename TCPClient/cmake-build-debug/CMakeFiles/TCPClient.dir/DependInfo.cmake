@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/xyk/Desktop/Git/TCPClient/Client.cpp" "/home/xyk/Desktop/Git/TCPClient/cmake-build-debug/CMakeFiles/TCPClient.dir/Client.cpp.o"
-  "/home/xyk/Desktop/Git/TCPClient/RawTransport.cpp" "/home/xyk/Desktop/Git/TCPClient/cmake-build-debug/CMakeFiles/TCPClient.dir/RawTransport.cpp.o"
-  "/home/xyk/Desktop/Git/TCPClient/main.cpp" "/home/xyk/Desktop/Git/TCPClient/cmake-build-debug/CMakeFiles/TCPClient.dir/main.cpp.o"
+  "/home/xyk/Documents/CLionProjects/TCPClient/Client.cpp" "/home/xyk/Documents/CLionProjects/TCPClient/cmake-build-debug/CMakeFiles/TCPClient.dir/Client.cpp.o"
+  "/home/xyk/Documents/CLionProjects/TCPClient/RawTransport.cpp" "/home/xyk/Documents/CLionProjects/TCPClient/cmake-build-debug/CMakeFiles/TCPClient.dir/RawTransport.cpp.o"
+  "/home/xyk/Documents/CLionProjects/TCPClient/main.cpp" "/home/xyk/Documents/CLionProjects/TCPClient/cmake-build-debug/CMakeFiles/TCPClient.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -48,10 +48,10 @@ RM = /home/xyk/Downloads/CLion-2018.3.4/clion-2018.3.4/bin/cmake/linux/bin/cmake
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xyk/Desktop/Git/testTCP
+CMAKE_SOURCE_DIR = /home/xyk/Documents/CLionProjects/testTCP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xyk/Desktop/Git/testTCP/cmake-build-debug
+CMAKE_BINARY_DIR = /home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xyk/Desktop/Git/testTCP/cmake-build-debug/CMakeFiles /home/xyk/Desktop/Git/testTCP/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug/CMakeFiles /home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xyk/Desktop/Git/testTCP/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xyk/Documents/CLionProjects/testTCP/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,33 +122,6 @@ testTCP: cmake_check_build_system
 testTCP/fast:
 	$(MAKE) -f CMakeFiles/testTCP.dir/build.make CMakeFiles/testTCP.dir/build
 .PHONY : testTCP/fast
-
-RawTransport.o: RawTransport.cpp.o
-
-.PHONY : RawTransport.o
-
-# target to build an object file
-RawTransport.cpp.o:
-	$(MAKE) -f CMakeFiles/testTCP.dir/build.make CMakeFiles/testTCP.dir/RawTransport.cpp.o
-.PHONY : RawTransport.cpp.o
-
-RawTransport.i: RawTransport.cpp.i
-
-.PHONY : RawTransport.i
-
-# target to preprocess a source file
-RawTransport.cpp.i:
-	$(MAKE) -f CMakeFiles/testTCP.dir/build.make CMakeFiles/testTCP.dir/RawTransport.cpp.i
-.PHONY : RawTransport.cpp.i
-
-RawTransport.s: RawTransport.cpp.s
-
-.PHONY : RawTransport.s
-
-# target to generate assembly for a file
-RawTransport.cpp.s:
-	$(MAKE) -f CMakeFiles/testTCP.dir/build.make CMakeFiles/testTCP.dir/RawTransport.cpp.s
-.PHONY : RawTransport.cpp.s
 
 Server.o: Server.cpp.o
 
@@ -213,9 +186,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... testTCP"
 	@echo "... edit_cache"
-	@echo "... RawTransport.o"
-	@echo "... RawTransport.i"
-	@echo "... RawTransport.s"
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"

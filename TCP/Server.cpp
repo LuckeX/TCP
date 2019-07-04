@@ -7,6 +7,9 @@
 static const int BUFFER_ALIGNMENT = 16;
 static const double BUFFER_EXPANSION_MULTIPLIER = 1.3;
 
+queue<TransportData> Server_Client::m_receiveQueue;
+boost::mutex Server_Client::m_receiveQueueMutex;
+
 Server_Client::Server_Client(size_t initialBufferSize, bool tag) {
     m_isClosing = false;
     m_tag = tag;
@@ -51,7 +54,9 @@ void Server_Client::readPacketHandler(const boost::system::error_code &ec, std::
                                 boost::asio::placeholders::bytes_transferred));
         } else {
             m_receivedBytes = 0;
-            cout<<m_receiveData.buffer.get()<<endl;
+//            cout<<m_receiveData.buffer.get()<<endl;
+            boost::lock_guard<boost::mutex>lock(m_receiveQueueMutex);
+            m_receiveQueue.push(m_receiveData);
             receiveData();
         }
     } else {
@@ -64,7 +69,10 @@ void Server_Client::readHandler(const boost::system::error_code &ec, std::size_t
 
     if (!ec || ec == boost::asio::error::message_size) {
         if (!m_tag) {
-            cout << m_receiveData.buffer.get() << endl;
+//            cout << m_receiveData.buffer.get() << endl;
+//            if(m_receiveQueue.size()>10)sleep(1);
+            boost::lock_guard<boost::mutex>lock(m_receiveQueueMutex);
+            m_receiveQueue.push(m_receiveData);
             receiveData();
             return;
         }
@@ -79,7 +87,7 @@ void Server_Client::readHandler(const boost::system::error_code &ec, std::size_t
                                               boost::asio::placeholders::bytes_transferred));
         } else {
             payloadlen = ntohl(*(reinterpret_cast<uint32_t *>(m_readHeader)));
-            cout<<"payloadlen: "<<payloadlen<<endl;
+//            cout<<"payloadlen: "<<payloadlen<<endl;
             if (payloadlen > m_bufferSize) {
                 m_bufferSize = ((payloadlen * BUFFER_EXPANSION_MULTIPLIER + BUFFER_ALIGNMENT - 1) / BUFFER_ALIGNMENT) *
                                BUFFER_ALIGNMENT;
