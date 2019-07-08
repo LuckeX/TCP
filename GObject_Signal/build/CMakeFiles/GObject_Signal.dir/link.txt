@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/GObject_Signal.dir/main.c.o CMakeFiles/GObject_Signal.dir/signal-demo.c.o  -o GObject_Signal -lgobject-2.0 -lglib-2.0 

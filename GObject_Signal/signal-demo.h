@@ -34,7 +34,7 @@ struct _SignalDemo {
 typedef struct _SignalDemoClass SignalDemoClass;
 struct _SignalDemoClass {
     GObjectClass parent_class;
-    void (*default_handler) (gpointer instance, gpointer t, gpointer userdata);
+    int (*default_handler) (gpointer instance, int a, int b, gpointer userdata);
 };
 
 GType signal_demo_get_type (void);
