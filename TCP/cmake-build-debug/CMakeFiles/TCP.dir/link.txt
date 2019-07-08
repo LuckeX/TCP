@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/TCP.dir/main.c.o CMakeFiles/TCP.dir/wrapper.cpp.o CMakeFiles/TCP.dir/Server.cpp.o  -o TCP -lpthread -lboost_thread 

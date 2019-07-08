@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xyk/Documents/CLionProjects/TCP/main.c
+stdio.h
+-
+zconf.h
+-
+pthread.h
+-
+wrapper.h
+/home/xyk/Documents/CLionProjects/TCP/wrapper.h
+
+/home/xyk/Documents/CLionProjects/TCP/wrapper.h
+
